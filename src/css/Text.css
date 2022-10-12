@@ -1,0 +1,27 @@
+
+/*Special*/
+.bold{
+    font-weight: 700;
+}
+
+.light-bold{
+    font-weight: 600;
+}
+
+/*Font sizes*/
+.small{
+    font-size: 0.7rem;
+}
+
+.large{
+    font-size: 3rem;
+}
+
+/*Font colors*/
+.gray-txt{
+    color: var(--gray-txt);
+}
+
+.orange-txt{
+    color: var(--orange-txt);
+}
