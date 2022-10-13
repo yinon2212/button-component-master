@@ -4,11 +4,10 @@ import Logo from "./Logo";
 import '../css/SideBar.css';
 
 const generateSideBarItem = (item) => {
-    return <SideBarItem active={item.active} text={item.topicName} />
+    return <SideBarItem linkTo={item.linkTo} text={item.topicName} />
 }
 
 const SideBar = ({items}) => {
-
     const sideBarItems = items.map(item => {
         return generateSideBarItem(item)
     });

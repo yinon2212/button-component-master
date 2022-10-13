@@ -1,0 +1,120 @@
+.input-field{
+    width: fit-content;
+    position: relative;
+    margin-top: 40px;
+}
+
+.input-field .input{
+    height: 56px;
+    width: 200px;
+    padding: 0 8px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--deafult-input-color);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.input-field .icon{
+    display: none;
+}
+
+.input-field .label{
+    position: absolute;
+    top: -30px;
+}
+
+.input-field {
+    color: var(--deafult-input-color);
+}
+
+
+/*Input colors*/
+.input-black .input,
+.input-field .input:hover{
+    border-color: black;
+}
+
+.input-black{
+    color: black;
+}
+
+.input-blue .input,
+.input-field .input:focus{
+    border-color: var(--primary);
+}
+
+.input-blue,
+.input-field .input:focus ~ .icon,
+.input-field .input:focus + .label{
+    color: var(--primary);
+}
+
+.input-red{
+    color: var(--danger);
+}
+
+.input-red .input{
+    border-color: var(--danger);
+}
+
+
+/*Input special*/
+.input-error .input{
+    border-color: var(--danger);
+}
+
+
+.input-error .label,
+.input-error .helper-text{
+    color: var(--danger);
+}
+
+.input-error .input:focus{
+    border-color: var(--danger);
+}
+
+.input-error  .input:focus + .label{
+    color: var(--danger);
+}
+
+.input-disabled .input{
+    background-color: #efefef;
+    border-color: #ccc;
+    pointer-events: none;
+}
+
+
+.show-icon .input{
+    padding-left: 30px;
+}
+
+.show-icon .icon{
+    display: block;
+    position: absolute;
+    top: 37%;
+}
+
+.start-icon .icon{
+    left: 5px;
+    
+}
+
+.end-icon .icon{
+    right: 10px;
+}
+
+/*Input sizes*/
+.sm .input{
+    height: 40px;
+}
+
+.md .input{
+    height: 65px;
+    width: 220px;
+}
+
+.full-w .input{
+    width: 100vh;
+    
+}
